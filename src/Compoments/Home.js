@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<div className='section-center'>
 			<h1>Home</h1>
-			<button onClick={() => navigate('/q1')}>Next</button>
+			<button onClick={() => navigate('/q1')}>Start!</button>
 		</div>
 	);
 }
