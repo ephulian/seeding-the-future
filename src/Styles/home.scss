@@ -19,12 +19,12 @@
 		justify-content: center;
 		align-items: center;
 		padding: 3rem;
-		color: $clr_font_1;
+		color: $clr_font_white;
 		gap: 5rem;
 
 		.logo-container {
-			background-color: $clr_font_1;
-			color: $clr_font_2;
+			background-color: $clr_font_white;
+			color: $clr_font_gray;
 			height: 85px;
 			width: 85px;
 			border-radius: 25px;
@@ -51,11 +51,11 @@
 		align-items: center;
 		justify-content: center;
 		gap: 1rem;
-		background-color: $clr_font_1;
+		background-color: $clr_font_white;
 		height: 25%;
 
 		.error {
-			color: red;
+			color: $clr_font_red;
 			height: 27px;
 		}
 
@@ -70,7 +70,6 @@
 
 .privacy-notice-container {
 	position: absolute;
-	// z-index: 1;
 	height: 100vh;
 	width: auto;
 	display: flex;
@@ -83,7 +82,7 @@
 	.privacy-notice-full {
 		max-height: 70%;
 		overflow: scroll;
-		background-color: $clr_font_1;
+		background-color: $clr_font_white;
 		padding: 1rem;
 		border-radius: 15px;
 
@@ -93,7 +92,7 @@
 
 			.cross::before {
 				content: '\00d7';
-				color: $clr_font_4;
+				color: $clr_font_black;
 				font-weight: 100;
 				font-family: Arial, sans-serif;
 				font-size: 26px;

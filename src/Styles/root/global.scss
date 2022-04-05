@@ -55,14 +55,11 @@ button {
 	padding: 0.5rem 5rem;
 	border-radius: 4px;
 	font-size: 1rem;
-	color: $clr_font_1;
+	color: $clr_font_white;
 	background-color: $clr_secondary;
 	max-width: 275px;
 	width: 100%;
-
-	// &:disabled {
-	// 	background-color: $clr_unactive;
-	// }
+	text-align: center;
 }
 
 .disabled {
@@ -78,6 +75,19 @@ input[type='checkbox'] {
 	&:checked {
 		background-color: $clr_active;
 		// padding: 15px;
+	}
+}
+
+input[type='radio'] {
+	border: 2px solid $clr_unactive;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin-bottom: -2px;
+	margin-right: 5px;
+
+	&:checked {
+		background-color: $clr_active;
 	}
 }
 

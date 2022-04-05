@@ -1,0 +1,71 @@
+.question-content {
+  height: 100%;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question-content .question-container {
+  padding: 0 1rem;
+}
+
+.question-content .answer-container {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.question-content .answer-container .answer {
+  font-size: 18px;
+  padding: 0.25rem;
+  border: 2px solid #989898;
+  width: 100%;
+}
+
+.question-content .answer-container .answer::-webkit-input-placeholder {
+  color: #989898;
+}
+
+.question-content .answer-container .answer:-ms-input-placeholder {
+  color: #989898;
+}
+
+.question-content .answer-container .answer::-ms-input-placeholder {
+  color: #989898;
+}
+
+.question-content .answer-container .answer::placeholder {
+  color: #989898;
+}
+
+.question-content .answer-container .single-option {
+  padding-top: 1.25rem;
+}
+
+.question-content .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=Question.css.map */

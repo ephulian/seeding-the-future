@@ -164,6 +164,7 @@ button {
   background-color: #7ad7f9;
   max-width: 275px;
   width: 100%;
+  text-align: center;
 }
 
 .disabled {
@@ -178,6 +179,19 @@ input[type='checkbox'] {
 }
 
 input[type='checkbox']:checked {
+  background-color: #23c223;
+}
+
+input[type='radio'] {
+  border: 2px solid #e4e4e4;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+
+input[type='radio']:checked {
   background-color: #23c223;
 }
 

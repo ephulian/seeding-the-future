@@ -7,13 +7,14 @@ import Q3 from './Compoments/Questions/Q3';
 import Q4 from './Compoments/Questions/Q4';
 import Q5 from './Compoments/Questions/Q5';
 import Q6 from './Compoments/Questions/Q6';
-import Header from './Compoments/Header';
 import Finish from './Compoments/Finish';
+import { useDispatch } from 'react-redux';
+import { useState } from 'react';
+import { addAnswer } from './Stores/answers';
 
 function App() {
 	return (
 		<Router>
-			{/* <Header /> */}
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/q1' element={<Q1 />} />
