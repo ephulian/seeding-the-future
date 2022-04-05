@@ -1,4 +1,4 @@
-import './App.css';
+import './Styles/root//global.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Compoments/Home';
 import Q1 from './Compoments/Questions/Q1';
@@ -13,7 +13,7 @@ import Finish from './Compoments/Finish';
 function App() {
 	return (
 		<Router>
-			<Header />
+			{/* <Header /> */}
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/q1' element={<Q1 />} />

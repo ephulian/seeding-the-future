@@ -1,0 +1,8 @@
+@import url(/Users/macpro/Documents/GitHub/seeding-the-future/src/Styles/QuestionHeader.css);
+.question-header {
+  height: 10vh;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+/*# sourceMappingURL=QuestionHeader.css.map */

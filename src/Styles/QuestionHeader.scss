@@ -1,0 +1,9 @@
+@import '../Styles/QuestionHeader.css';
+
+.question-header {
+	position: absolute;
+	height: 10vh;
+	width: 100%;
+	top: 0;
+	background: $clr_gradient;
+}
