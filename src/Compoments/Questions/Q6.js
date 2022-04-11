@@ -1,18 +1,25 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import QuestionHeader from '../QuestionHeader';
-import '../../Styles/Question.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { addAnswer } from '../../Stores/answers';
 
+import '../../Styles/Question.css';
+// import '../../Styles/home.css';
+
 export default function Q6() {
 	const [nextButton, setDisabled] = useState('disabled');
-	const [error, setError] = useState('Answer here..');
+	const [error, setError] = useState('');
+
+	const store = useSelector((state) => state);
+
+	console.log(store);
 
 	const enableButton = (e) => {
 		if (nextButton === 'disabled') {
 			setError('You must answer to continue!');
 		} else {
+			// addAnswer()
 			navigate('/finish');
 		}
 	};
@@ -67,8 +74,9 @@ export default function Q6() {
 					</div>
 				</div>
 				<div className='button-container'>
+					{error}
 					<button className={`${nextButton}`} onClick={() => enableButton()}>
-						Next
+						Submit
 					</button>
 				</div>
 			</div>

@@ -8,9 +8,7 @@ import Q4 from './Compoments/Questions/Q4';
 import Q5 from './Compoments/Questions/Q5';
 import Q6 from './Compoments/Questions/Q6';
 import Finish from './Compoments/Finish';
-import { useDispatch } from 'react-redux';
-import { useState } from 'react';
-import { addAnswer } from './Stores/answers';
+import Visualisation from './Compoments/Visualisation';
 
 function App() {
 	return (
@@ -24,6 +22,7 @@ function App() {
 				<Route path='/q5' element={<Q5 />} />
 				<Route path='/q6' element={<Q6 />} />
 				<Route path='/finish' element={<Finish />} />
+				<Route path='/visualisation' element={<Visualisation />} />
 			</Routes>
 		</Router>
 	);

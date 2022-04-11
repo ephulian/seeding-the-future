@@ -7,7 +7,7 @@ import { addAnswer } from '../../Stores/answers';
 
 export default function Q5() {
 	const [nextButton, setDisabled] = useState('disabled');
-	const [error, setError] = useState('Answer here..');
+	const [error, setError] = useState('');
 
 	const enableButton = (e) => {
 		if (nextButton === 'disabled') {
@@ -68,6 +68,7 @@ export default function Q5() {
 					</div>
 				</div>
 				<div className='button-container'>
+					{error}
 					<button className={`${nextButton}`} onClick={() => enableButton()}>
 						Next
 					</button>

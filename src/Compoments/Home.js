@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { openai } from '../OpenAI/OpenAi-config';
 import '../Styles/home.css';
 
 export default function Home() {
 	const [privacyNoticeState, setPrivacyNoticeState] = useState('closed');
 	const [joinButton, setDisabled] = useState('disabled');
 	const [error, setError] = useState('');
+	const [answer, setAnswer] = useState('');
 
 	let navigate = useNavigate();
+	let dispatch = useDispatch();
 
 	const togglePrivacyNotice = () => {
 		privacyNoticeState === 'closed'
@@ -30,6 +34,26 @@ export default function Home() {
 		} else {
 			navigate('/q1');
 		}
+	};
+
+	const getAnswer = async (question) => {
+		const gptResponse = await openai
+			.complete({
+				engine: 'davinci',
+				prompt: question,
+				maxTokens: 5,
+				temperature: 0.9,
+				topP: 1,
+				presencePenalty: 0,
+				frequencyPenalty: 0,
+				bestOf: 1,
+				n: 1,
+				stream: false,
+				stop: ['\n', 'testing'],
+			})
+			.then((value) => {
+				setAnswer(value);
+			});
 	};
 
 	return (

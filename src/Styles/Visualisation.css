@@ -1,0 +1,29 @@
+#canvas {
+  background: white;
+  max-width: none;
+  max-height: 1200px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+#start-animation {
+  position: absolute;
+  z-index: 2;
+  left: 50vw;
+  top: 50vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: green;
+  background-color: white;
+  border: 2px solid green;
+  max-width: none;
+  padding: 1rem 3rem;
+  width: 400px;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=Visualisation.css.map */
